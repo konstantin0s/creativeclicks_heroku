@@ -45,7 +45,7 @@ class App extends Component {
         method: "GET",
         headers: {"Access-Control-Allow-Origin": "*",
                   "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With"},
-        url: `https://p.djummer.com/opdracht?msisdn=${msisdn}`,
+        url: `https://cors-anywhere.herokuapp.com/https://p.djummer.com/opdracht?msisdn=${msisdn}`,
         data: this.state.msisdn,
       })
         .then((result) => {
