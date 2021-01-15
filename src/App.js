@@ -43,9 +43,9 @@ class App extends Component {
       let msisdn = this.state.msisdn;
       axios({
         method: "GET",
-        credentials: "include",
-        url: `http://p.djummer.com/opdracht?msisdn=${msisdn}`,
-        headers: {"Access-Control-Allow-Origin": "*"},
+        url: `https://p.djummer.com/opdracht?msisdn=${msisdn}`,
+        headers: {"Access-Control-Allow-Origin": "*",
+       "Access-Control-Allow-Headers": "Content-Type, Authorization, X-Requested-With"},
         data: this.state.msisdn,
       })
         .then((result) => {
