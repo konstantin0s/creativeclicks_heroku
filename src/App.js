@@ -44,7 +44,7 @@ class App extends Component {
       axios({
         method: "GET",
         credentials: "include",
-        url: `https://cors-anywhere.herokuapp.com/http://p.djummer.com/opdracht?msisdn=${msisdn}`,
+        url: `http://p.djummer.com/opdracht?msisdn=${msisdn}`,
         headers: {"Access-Control-Allow-Origin": "*"},
         data: this.state.msisdn,
       })
