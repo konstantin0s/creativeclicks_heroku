@@ -45,7 +45,6 @@ class App extends Component {
         method: "GET",
         credentials: "include",
         url: `https://cors-anywhere.herokuapp.com/http://p.djummer.com/opdracht?msisdn=${msisdn}`,
-        headers: { "content-type": "application/json" },
         data: this.state.msisdn,
       })
         .then((result) => {
